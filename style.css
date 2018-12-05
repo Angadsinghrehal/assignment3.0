@@ -1,0 +1,67 @@
+*{
+    margin: 0;padding: 0;
+}
+html,body {width: 100%;height: 100%;}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(planets-cosmos_00341848.jpg);
+}
+
+.angad {
+    width: 150px;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+      
+    
+}
+
+.updown{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    bottom: 380px;
+     
+    animation: bounce 3s infinite linear;
+   /* background-image: url(silly_putty.png);*/
+    z-index: 20;
+
+}
+
+@keyframes bounce {
+    0% {bottom: 380px;}
+    50% {bottom: 80px;}
+    100% {bottom: 380px;}
+    45% {transform: scale(1,1);}
+    50% {transform: scale(1.2,.7);}
+    55% {transform: scale(1,1);}
+}
+
+.singh{
+    width: 70px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    left: 40px;
+    bottom: 90px;
+    border-radius: 50%;
+    animation: singh 3s infinite;
+    z-index: -9;
+    -webkit-filter: blur(2px);
+    -webkit-transform:scale(1,0.2)
+    
+}
+
+@keyframes singh {
+    0% {opacity: .5;transform: scale(2,1);}
+    50% {opacity: .6;transform: scale(1,1);}
+    100% {opacity: .1;transform: scale(2,1);}
+    
+}
+
+
+
